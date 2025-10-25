@@ -1,0 +1,79 @@
+/* Basic styles for Homepage component */
+.hp-container{
+  max-width:1000px;
+  margin:24px auto;
+  padding:18px;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:#1f2937;
+}
+.hp-title{
+  margin:0 0 6px 0;
+  font-size:1.6rem;
+}
+.hp-sub{
+  margin:0 0 18px 0;
+  color:#4b5563;
+}
+.hp-main{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:20px;
+}
+.hp-form{
+  background:#fff;
+  padding:14px;
+  border-radius:8px;
+  box-shadow:0 1px 2px rgba(0,0,0,0.04);
+}
+.hp-textarea{
+  width:100%;
+  resize:vertical;
+  padding:10px;
+  border:1px solid #e5e7eb;
+  border-radius:6px;
+  font-size:0.95rem;
+}
+.hp-platforms{
+  margin-top:12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.hp-platforms label{display:flex;align-items:center;gap:8px;font-size:0.95rem}
+.hp-actions{margin-top:12px;display:flex;gap:8px}
+.btn{padding:8px 12px;border:1px solid #d1d5db;border-radius:6px;background:#fff;cursor:pointer}
+.btn.primary{background:#2563eb;color:#fff;border-color:#2563eb}
+.btn:disabled{opacity:0.6;cursor:not-allowed}
+.hp-output{background:#fff;padding:14px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
+.hp-result{white-space:pre-wrap;background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7}
+.hp-empty{color:#6b7280}
+.hp-error{margin-top:12px;color:#b91c1c}
+.hp-output-actions{margin-top:8px}
+
+@media (max-width:880px){
+  .hp-main{grid-template-columns:1fr;}
+}
+
+/* Platform cards grid */
+.platform-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+.platform-card{
+  background:linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border:1px solid #e6eef8;
+  padding:12px;
+  border-radius:10px;
+  box-shadow:0 3px 8px rgba(15,23,42,0.04);
+  display:flex;
+  flex-direction:column;
+}
+.platform-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.platform-post{white-space:pre-wrap;background:#fbfcfe;padding:10px;border-radius:8px;border:1px solid #eef6ff;color:#0f172a}
+.copy-btn{padding:6px 8px;font-size:0.85rem;border-radius:6px}
+
+@media (max-width:700px){
+  .platform-grid{grid-template-columns:1fr}
+}
+
