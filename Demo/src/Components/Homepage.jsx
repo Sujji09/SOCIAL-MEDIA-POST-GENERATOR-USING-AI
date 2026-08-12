@@ -55,7 +55,7 @@ Ensure the JSON is valid and properly escaped. Do not include any surrounding ex
                 headers: {
                     'content-type': 'application/json',
                     // Consider moving the API key to an environment variable
-                    'X-goog-api-key': 'AIzaSyD699pK6Re-a3xv1sz8R0494IxZzcrMoJE'
+                    'X-goog-api-key': 'YOUR_API_KEY'
                 },
                 body: JSON.stringify(requestBody)
             };
